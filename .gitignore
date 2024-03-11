@@ -3,3 +3,8 @@ submission_last.csv
 lab_5_data
 .ipynb_checkpoints
 baseline-in-pytorch.ipynb
+lab_5_data_raw
+lab_5_models_meta
+test
+train
+val
