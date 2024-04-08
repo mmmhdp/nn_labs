@@ -8,3 +8,4 @@ lab_5_models_meta
 test
 train
 val
+unigram_freq.csv
