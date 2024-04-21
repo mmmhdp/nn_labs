@@ -1,0 +1,49 @@
+1)
+Classification
+	Losses:
+		BCE aka LogLoss- binary cross entropy
+			BCE = -1/N * SUM_{1}^{N}(y_i*log(p(y_i))) + (1 - y_i)*log(1 - p(y_i))  
+		CE - cross entropy for multiclass classification
+			mean of BCE (BCE between i class and all another)
+	Metrics:
+	*confusion matrix 
+		Accuracy = (TP + TN)/(TP + TN + FP + FN)
+		Precision = TP/(TP + FP)
+		Recall = TP/(TP+FN)
+		F1-measure = 2 / (1/Recall + 1/Precision) (harmonic mean)
+		AUC - but I don't really figured it out
+Regression
+	Losses:
+		MSE - mean squared error
+			MSE = E(e^2)
+		MSLE - mean squared log error
+			MSLE = E(log(e^2))
+	Metrics:
+		MAE - mean absolute error
+			MAE = ||e||
+		MSE - mean squared error
+			MSE = E(e^2)
+		R^2 =  1 - SUM_{i=1}^{N}[(y_i - f(x_i))^2] / SUM_{i=1}^{N}[y_i - y\hat] 
+		if R^2 -> 1 - ideal distinguish rule 
+ 		
+Clusterization
+	Metrics:
+		Silhouette Score = (b_i - a_i)/max(a_i, b_i)
+
+2)
+Math Neuron model:
+	find out linear represetation of the func for classification 
+	y = Wx + b 
+XoR problem:
+	we can't find such a func for data with cross-like representation, so, we need non-linear models
+	for more general data
+
+3)
+GAN - Generative Adverstial Network 
+Part: 
+	Generator
+	Discriminator
+Loss:
+	mix-max = E_x[log(D(x))] + E_z[log(1 - D(G(z)))]
+	G tries to maximize
+	D tries to minimize

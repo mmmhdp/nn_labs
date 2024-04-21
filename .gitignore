@@ -1,5 +1,5 @@
-submission.csv
-submission_last.csv
+*.csv
+*.pt
 lab_5_data
 .ipynb_checkpoints
 baseline-in-pytorch.ipynb
@@ -8,4 +8,3 @@ lab_5_models_meta
 test
 train
 val
-unigram_freq.csv
